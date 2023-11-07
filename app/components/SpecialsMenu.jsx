@@ -35,14 +35,14 @@ const SpecialMenu = () => {
                 {normalItems.map((item, index) => (
                   <tr key={index} className='border-b border-white '>
                     <td className='px-1 font-medium '>
-                      <h1 className='text-[#800000] font-bold text-xl w-[90%]'>
+                      <h1 className='text-[#8e3a60] font-bold text-xl w-[90%]'>
                         {item.name}
                       </h1>
                       <span className='italic font-bold text-sm'>
                         {item.description}
                       </span>
                     </td>
-                    <td className='px-1 font-bold text-[#800000] text-lg w-[10%]'>
+                    <td className='px-1 font-bold text-[#8e3a60] text-lg w-[10%]'>
                       <h1 className='line-through text-black text-sm'>
                         {item.price}
                       </h1>

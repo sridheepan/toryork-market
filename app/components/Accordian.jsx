@@ -30,16 +30,16 @@ const Accordion = () => {
   const header = (panelTitle, subheading) => (
     <>
       <p className='font-bold text-lg'>{panelTitle}</p>
-      <span className='text-xs italic text-[#800000]'>{subheading}</span>
+      <span className='text-xs italic text-[#8e3a60]'>{subheading}</span>
     </>
   );
 
   const customExpandIcon = ({ isActive }) => (
     <span>
       {isActive ? (
-        <HiOutlineMinusSm color='#800000' className='mt-1' size={35} />
+        <HiOutlineMinusSm color='#8e3a60' className='mt-1' size={35} />
       ) : (
-        <HiOutlinePlusSm color='#800000' className='mt-1' size={35} />
+        <HiOutlinePlusSm color='#8e3a60' className='mt-1' size={35} />
       )}
     </span>
   );
@@ -62,14 +62,14 @@ const Accordion = () => {
         className='px-2'>
         <Omelettes />
       </Panel>
-      <div className='h-[1px] bg-[#800000] mx-2'></div>
+      <div className='h-[1px] bg-[#8e3a60] mx-2'></div>
       <Panel
         header={header('Eggs', 'Served with H-fries, Toast & Salad')}
         key='2'
         className='p-2'>
         <Eggs />
       </Panel>
-      <div className='h-[1px] bg-[#800000] mx-2'></div>
+      <div className='h-[1px] bg-[#8e3a60] mx-2'></div>
       <Panel
         header={header(
           'Poutine',
@@ -79,7 +79,7 @@ const Accordion = () => {
         className='p-2'>
         <Poutine />
       </Panel>
-      <div className='h-[1px] bg-[#800000] mx-2'></div>
+      <div className='h-[1px] bg-[#8e3a60] mx-2'></div>
       <Panel
         header={header(
           'Breakfast Sandwiches',
@@ -89,7 +89,7 @@ const Accordion = () => {
         className='p-2'>
         <BreakfastSandwiches />
       </Panel>
-      <div className='h-[1px] bg-[#800000] mx-2'></div>
+      <div className='h-[1px] bg-[#8e3a60] mx-2'></div>
       <Panel
         header={header(
           'Sandwiches',
@@ -99,14 +99,14 @@ const Accordion = () => {
         className='p-2'>
         <Sandwiches />
       </Panel>
-      <div className='h-[1px] bg-[#800000] mx-2'></div>
+      <div className='h-[1px] bg-[#8e3a60] mx-2'></div>
       <Panel header={header(
           'Burgers',
           '6 oz Fresh Beef on a toasted sesame bun, served with fries or house salad'
         )} key='6' className='p-2'>
           <Burgers />
         </Panel>
-      <div className='h-[1px] bg-[#800000] mx-2'></div>
+      <div className='h-[1px] bg-[#8e3a60] mx-2'></div>
       <Panel
         header={header(
           'Toryork Specials',
@@ -116,14 +116,14 @@ const Accordion = () => {
         className='p-2'>
           <Specials />
         </Panel>
-      <div className='h-[1px] bg-[#800000] mx-2'></div>
+      <div className='h-[1px] bg-[#8e3a60] mx-2'></div>
       <Panel header={header(
           'Salads',
           ''
         )} key='8' className='p-2'>
         <Salads />
       </Panel>
-      <div className='h-[1px] bg-[#800000] mx-2'></div>
+      <div className='h-[1px] bg-[#8e3a60] mx-2'></div>
       <Panel
         header={header(
           'Rice Bowls',

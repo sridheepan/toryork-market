@@ -33,7 +33,7 @@ const Poutine = () => {
                 {normalItems.map((item, index) => (
                   <tr key={index} className='border-b border-white'>
                     <td>
-                      <h1 className='text-[#800000] font-bold text-md '>
+                      <h1 className='text-[#8e3a60] font-bold text-md '>
                         {item.name}
                       </h1>
                       <span className='italic font-bold text-xs'>
@@ -43,7 +43,7 @@ const Poutine = () => {
                         )}
                       </span>
                     </td>
-                    <td className='px-1 font-bold text-[#800000] text-md w-[10%]'>
+                    <td className='px-1 font-bold text-[#8e3a60] text-md w-[10%]'>
                       {item.specialprice != '' && (
                         <h1 className='line-through text-black text-sm'>
                           {item.price}

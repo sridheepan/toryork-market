@@ -35,7 +35,7 @@ const MainMenu = () => {
                 {normalItems.map((item, index) => (
                   <tr key={index} className='border-b border-white '>
                     <td className='px-1 font-medium '>
-                      <h1 className='text-[#800000] font-bold text-xl w-[90%]'>
+                      <h1 className='text-[#8e3a60] font-bold text-xl w-[90%]'>
                         {item.name}
                       </h1>
                       <span className='italic font-bold text-sm'>

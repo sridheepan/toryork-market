@@ -77,7 +77,7 @@ const Burgers = () => {
                 {normalItems.map((item, index) => (
                   <tr key={index} className='border-b border-white'>
                     <td>
-                      <h1 className='text-[#800000] font-bold text-md w-[70%]'>
+                      <h1 className='text-[#8e3a60] font-bold text-md w-[70%]'>
                         {item.name}
                       </h1>
                       <span className='italic text-xs'>
@@ -87,7 +87,7 @@ const Burgers = () => {
                         )}
                       </span>
                     </td>
-                    <td className='px-1 font-bold text-[#800000] text-md w-[10%] text-center'>
+                    <td className='px-1 font-bold text-[#8e3a60] text-md w-[10%] text-center'>
                       {item.specialprice != '' && (
                         <h1 className='line-through text-black text-sm'>
                           {item.combo}
@@ -95,7 +95,7 @@ const Burgers = () => {
                       )}
                       <span>{item.combo}</span>
                     </td>
-                    <td className='px-1 font-bold text-[#800000] text-md w-[10%] text-center'>
+                    <td className='px-1 font-bold text-[#8e3a60] text-md w-[10%] text-center'>
                       {item.specialprice != '' && (
                         <h1 className='line-through text-black text-sm'>
                           {item.price}
