@@ -52,15 +52,15 @@ const Sandwiches = () => {
 
   return (
     <div className='flex flex-col justify-center'>
-      <div className='overflow-x-auto mx-6'>
+      <div className='overflow-x-auto'>
         <div className='inline-block min-w-full rounded-lg'>
           <div className='overflow-hidden'>
             <table className='min-w-full text-left font-bold'>
             <thead>
             <tr>
               <th className='w-[80%]'></th>
-              <th className='px-6 text-[red] text-[11px] w-[10%] text-center'>Combo</th>
-              <th className='px-6 text-[red] text-[11px] w-[10%] text-center'>Sandwich Only</th>
+              <th className='px-1 text-[red] text-[11px] w-[10%] text-center'>Combo</th>
+              <th className='px-1 text-[red] text-[11px] w-[10%] text-center'>Sandwich Only</th>
             </tr>
           </thead>
               <tbody>
@@ -77,7 +77,7 @@ const Sandwiches = () => {
                         )}
                       </span>
                     </td>
-                    <td className='px-6 py-4 font-bold text-[#800000] text-md w-[10%] text-center'>
+                    <td className='px-1 font-bold text-[#800000] text-md w-[10%] text-center'>
                       {item.specialprice != '' && (
                         <h1 className='line-through text-black text-sm'>
                           {item.combo}
@@ -85,7 +85,7 @@ const Sandwiches = () => {
                       )}
                       <span>{item.combo}</span>
                     </td>
-                    <td className='px-6 py-4 font-bold text-[#800000] text-md w-[10%] text-center'>
+                    <td className='px-1 font-bold text-[#800000] text-md w-[10%] text-center'>
                       {item.specialprice != '' && (
                         <h1 className='line-through text-black text-sm'>
                           {item.price}

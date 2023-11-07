@@ -95,16 +95,16 @@ const BreakfastSandwiches = () => {
 
   return (
     <div className='flex flex-col justify-center'>
-      <div className='overflow-x-auto mx-6'>
+      <div className='overflow-x-auto'>
         <div className='inline-block min-w-full rounded-lg'>
           <div className='overflow-hidden'>
             <table className='min-w-full text-left font-bold'>
             <thead>
             <tr>
               <th className='w-[70%]'></th>
-              <th className='px-6 text-[red] text-[11px] w-[10%] text-center'></th>
-              <th className='px-6 text-[red] text-[11px] w-[10%] text-center'>with Coffee</th>
-              <th className='px-6 text-[red] text-[11px] w-[20%] text-center'>with Coffee & Hash Brown</th>
+              <th className='px-1 text-[red] text-[11px] w-[10%] text-center'></th>
+              <th className='px-1 text-[red] text-[11px] w-[10%] text-center'>with Coffee</th>
+              <th className='px-1 text-[red] text-[11px] w-[20%] text-center'>with Coffee & Hash Brown</th>
             </tr>
           </thead>
               <tbody>
@@ -121,7 +121,7 @@ const BreakfastSandwiches = () => {
                         )}
                       </span>
                     </td>
-                    <td className='px-6 py-4 font-bold text-[#800000] text-md w-[10%] text-center'>
+                    <td className='px-1 font-bold text-[#800000] text-md w-[10%] text-center'>
                       {item.specialprice != '' && (
                         <h1 className='line-through text-black text-sm'>
                           {item.price}
@@ -129,7 +129,7 @@ const BreakfastSandwiches = () => {
                       )}
                       <span>{item.price}</span>
                     </td>
-                    <td className='px-6 py-4 font-bold text-[#800000] text-md w-[10%] text-center'>
+                    <td className='px-1 font-bold text-[#800000] text-md w-[10%] text-center'>
                       {item.specialprice != '' && (
                         <h1 className='line-through text-black text-sm'>
                           {item.withCoffee}
@@ -137,7 +137,7 @@ const BreakfastSandwiches = () => {
                       )}
                       <span>{item.withCoffee}</span>
                     </td>
-                    <td className='px-6 py-4 font-bold text-[#800000] text-md w-[20%] text-center'>
+                    <td className='px-1 font-bold text-[#800000] text-md w-[20%] text-center'>
                       {item.specialprice != '' && (
                         <h1 className='line-through text-black text-sm'>
                           {item.withCoffeeH}

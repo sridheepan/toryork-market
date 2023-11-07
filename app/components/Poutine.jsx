@@ -25,7 +25,7 @@ const Poutine = () => {
 
   return (
     <div className='flex flex-col justify-center'>
-      <div className='overflow-x-auto mx-6'>
+      <div className='overflow-x-auto'>
         <div className='inline-block min-w-full rounded-lg'>
           <div className='overflow-hidden'>
             <table className='min-w-full text-left font-bold'>
@@ -43,7 +43,7 @@ const Poutine = () => {
                         )}
                       </span>
                     </td>
-                    <td className='px-6 py-4 font-bold text-[#800000] text-md w-[10%]'>
+                    <td className='px-1 font-bold text-[#800000] text-md w-[10%]'>
                       {item.specialprice != '' && (
                         <h1 className='line-through text-black text-sm'>
                           {item.price}

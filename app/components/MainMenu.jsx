@@ -27,14 +27,14 @@ const MainMenu = () => {
 
   return (
     <div className='flex flex-col justify-center items-center'>
-      <div className='overflow-x-auto mx-6'>
+      <div className='overflow-x-auto'>
         <div className='inline-block min-w-full py-2 rounded-lg'>
           <div className='overflow-hidden'>
             <table className='min-w-full text-left font-bold'>
               <tbody>
                 {normalItems.map((item, index) => (
                   <tr key={index} className='border-b border-white '>
-                    <td className='px-6 py-4 font-medium '>
+                    <td className='px-1 font-medium '>
                       <h1 className='text-[#800000] font-bold text-xl w-[90%]'>
                         {item.name}
                       </h1>
@@ -42,7 +42,7 @@ const MainMenu = () => {
                         {item.description}
                       </span>
                     </td>
-                    <td className='px-6 py-4 font-bold text-lg w-[10%]'>
+                    <td className='px-1 font-bold text-lg w-[10%]'>
                       {/* <h1 className='line-through text-black text-sm'>
                         {item.price}
                       </h1> */}
