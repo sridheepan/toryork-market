@@ -1,16 +1,24 @@
 'use client';
 
+import { useRouter } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
 import { db } from '../config/firebase';
 import { collection, getDocs, updateDoc, doc } from 'firebase/firestore';
 import MenuTable from '../components/MenuTable';
 
 const WeeklyMenu = () => {
+  const router = useRouter();
   const specialsCollectionRef = collection(db, 'specials');
   const [specials, setSpecials] = useState([]);
 
   useEffect(() => {
-    getSpecials();
+    const isLoggedIn = localStorage.getItem('isLoggedIn');
+    console.log(isLoggedIn);
+    if (isLoggedIn == 'true') {
+      getSpecials();
+    } else {
+      router.push('/');
+    }
   }, []);
 
   const getSpecials = async () => {

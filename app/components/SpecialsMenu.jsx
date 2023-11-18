@@ -1,20 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { db } from '../config/firebase';
-import { collection, getDocs, updateDoc, doc } from 'firebase/firestore';
+import { collection, getDocs} from 'firebase/firestore';
 
 const SpecialMenu = () => {
   const specialsCollectionRef = collection(db, 'specials');
   const [specials, setSpecials] = useState([]);
 
   useEffect(() => {
-    const isLoggedIn = localStorage.getItem('isLoggedIn');
-    if (isLoggedIn) {
-      console.log('User is logged in!');
-      getSpecials();
-    } else {
-      console.log('User is not logged in.');
-      router.push('/');
-    }
+    getSpecials();
   }, []);
 
   const getSpecials = async () => {
