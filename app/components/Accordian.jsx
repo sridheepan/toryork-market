@@ -76,26 +76,26 @@ const Accordion = () => {
 
       <div className='h-[1px] bg-[#993399] mx-2'></div>
 
-      <Panel header={header('Burgers', '6 oz Fresh Beef on a toasted sesame bun, served with fries or house salad')} key='6' className='p-2'>
+      <Panel header={header('Toryork Specials', 'Chef`s Specialties: Elevate Your Palate with Our House Favorites')} key='6' className='p-2'>
+        <Specials />
+      </Panel>
+
+      <div className='h-[1px] bg-[#993399] mx-2'></div>
+
+      <Panel header={header('Burgers', '6 oz Fresh Beef on a toasted sesame bun, served with fries or house salad')} key='7' className='p-2'>
         <Burgers />
       </Panel>
 
       <div className='h-[1px] bg-[#993399] mx-2'></div>
 
-      <Panel header={header('Rice Bowls', 'Fresh green salad, basmati rice, choice of meat covered in our homemade yogurt dressing, dressing. hot sauce and jalapeno')} key='7' className='p-2'>
+      <Panel header={header('Rice Bowls', 'Fresh green salad, basmati rice, choice of meat covered in our homemade yogurt dressing, dressing. hot sauce and jalapeno')} key='8' className='p-2'>
         <RiceBowls />
       </Panel>
 
       <div className='h-[1px] bg-[#993399] mx-2'></div>
 
-      <Panel header={header('Salads', '')} key='8' className='p-2'>
+      <Panel header={header('Salads', 'Fresh Greens, Bold Flavors: Our Salad Selection Delights Every Palate')} key='9' className='p-2'>
         <Salads />
-      </Panel>
-
-      <div className='h-[1px] bg-[#993399] mx-2'></div>
-
-      <Panel header={header('Toryork Specials', '')} key='9' className='p-2'>
-        <Specials />
       </Panel>
 
     </Collapse>
