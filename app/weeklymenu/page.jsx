@@ -5,9 +5,8 @@ import React, { useEffect, useState } from 'react';
 import { db } from '../config/firebase';
 import { collection, getDocs, updateDoc, doc } from 'firebase/firestore';
 import MenuTable from '../components/MenuTable';
-import { Alert } from 'antd';
 
-const page = () => {
+const WeeklyMenu = () => {
   const router = useRouter();
   const specialsCollectionRef = collection(db, 'specials');
   const [specials, setSpecials] = useState([]);
@@ -48,4 +47,4 @@ const page = () => {
   return <div className='h-screen bg-white'>{specials && <div>{specials.length > 0 && <MenuTable menuData={specials} update={updateSpecial} />}</div>}</div>;
 };
 
-export default page;
+export default WeeklyMenu;
