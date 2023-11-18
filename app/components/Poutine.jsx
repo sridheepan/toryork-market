@@ -7,7 +7,15 @@ const Poutine = () => {
       description: '',
       price: '$8.49',
       specialprice: '',
-      add: 'Grilled Chicken - $4.99'
+    }
+  ];
+
+  const additionalItems = [
+    {
+      name: 'Grilled Chicken',
+      description: '',
+      price: '$4.99',
+      specialprice: '',
     },
     {
       name: 'Fried Chicken',
@@ -21,7 +29,7 @@ const Poutine = () => {
       price: '$6.99',
       specialprice: '',
     },
-  ]
+  ];
 
   return (
     <div className='flex flex-col justify-center'>
@@ -33,22 +41,26 @@ const Poutine = () => {
                 {normalItems.map((item, index) => (
                   <tr key={index} className='border-b border-white'>
                     <td>
-                      <h1 className='text-[#993399] font-bold text-md '>
-                        {item.name}
-                      </h1>
+                      <h1 className='text-[#993399] font-bold text-md '>{item.name}</h1>
                       <span className='italic font-bold text-xs'>
                         {item.description}
-                        {item.add && (
-                          <p className='py-2'>Add {item.add}</p>
-                        )}
+                        {item.add && <p className='py-2'>Add {item.add}</p>}
                       </span>
                     </td>
                     <td className='px-1 font-bold text-[#993399] text-md w-[10%]'>
-                      {item.specialprice != '' && (
-                        <h1 className='line-through text-black text-sm'>
-                          {item.price}
-                        </h1>
-                      )}
+                      {item.specialprice != '' && <h1 className='line-through text-black text-sm'>{item.price}</h1>}
+                      <span>{item.price}</span>
+                    </td>
+                  </tr>
+                ))}
+                <div className='text-[red] font-bold text-md pt-2 underline'>Add-ons</div>
+                {additionalItems.map((item, index) => (
+                  <tr key={index} className='border-b border-white'>
+                    <td>
+                      <h1 className='text-[#993399] font-bold text-md '>{item.name}</h1>
+                      <span className='italic font-bold text-xs'>{item.description}</span>
+                    </td>
+                    <td className='px-1 font-bold text-[#993399] text-md w-[10%]'>
                       <span>{item.price}</span>
                     </td>
                   </tr>

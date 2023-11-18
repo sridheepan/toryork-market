@@ -29,7 +29,6 @@ const MenuTable = (props) => {
     });
 
     setMenuData(updatedMenuData);
-    console.log('updatedMenuData: ', updatedMenuData);
   };
 
   return (
@@ -47,14 +46,14 @@ const MenuTable = (props) => {
             </thead> */}
             <tbody>
               {groupedMenu[day].map((item, index) => (
-                <tr key={index} className='border-2 border-black text-center p-2'>
-                  <td className='p-2 w-[10%] text-[#993399] font-bold'>
-                    <input className='p-2 rounded-lg border-2' value={item.name} onChange={(event) => handleInputChange(day, index, 'name', event.target.value)} />
+                <tr key={index} className='border-2 border-black text-center p-2 col-span-3'>
+                  <td className='p-2 w-1/3 text-[#993399] font-bold'>
+                    <input className='p-2 rounded-lg border-2 w-full' value={item.name} onChange={(event) => handleInputChange(day, index, 'name', event.target.value)} />
                   </td>
                   <td className='p-2 w-1/3'>
                     <textarea rows='3' className='p-2 rounded-lg border-2 w-full' value={item.description} onChange={(event) => handleInputChange(day, index, 'description', event.target.value)} />
                   </td>
-                  <td className='p-2 w-[10%]'>
+                  <td className='p-2 w-1/3'>
                     <input className='p-2 rounded-lg border-2 w-full' value={item.price} onChange={(event) => handleInputChange(day, index, 'price', event.target.value)} />
                   </td>
                 </tr>

@@ -43,42 +43,61 @@ const Accordion = () => {
       <Panel header={header('Weekly Specials', 'Indulge in Our Exclusive Weekly Specials')} key='0' className='px-2'>
         <SpecialMenu />
       </Panel>
+
       <div className='h-[1px] bg-[#993399] mx-2'></div>
-      <Panel header={header('Omelettes', '3 Eggs served with H-fries, Toast & Salad Coffee included before 11am')} key='1' className='px-2'>
-        <Omelettes />
+
+      <Panel header={header('Breakfast Sandwiches', 'Served on white or whole wheat toast')} key='1' className='p-2'>
+        <BreakfastSandwiches />
       </Panel>
+
       <div className='h-[1px] bg-[#993399] mx-2'></div>
+
       <Panel header={header('Eggs', 'Served with H-fries, Toast & Salad')} key='2' className='p-2'>
         <Eggs />
       </Panel>
+
       <div className='h-[1px] bg-[#993399] mx-2'></div>
-      <Panel header={header('Poutine', 'Served with fresh cheese curds & vegetarian poutine gravy')} key='3' className='p-2'>
+
+      <Panel header={header('Omelettes', '3 Eggs served with H-fries, Toast & Salad Coffee included before 11am')} key='3' className='px-2'>
+        <Omelettes />
+      </Panel>
+
+      <div className='h-[1px] bg-[#993399] mx-2'></div>
+
+      <Panel header={header('Poutine', 'Served with fresh cheese curds & vegetarian poutine gravy')} key='4' className='p-2'>
         <Poutine />
       </Panel>
+
       <div className='h-[1px] bg-[#993399] mx-2'></div>
-      <Panel header={header('Breakfast Sandwiches', 'Served on white or whole wheat toast')} key='4' className='p-2'>
-        <BreakfastSandwiches />
-      </Panel>
-      <div className='h-[1px] bg-[#993399] mx-2'></div>
+
       <Panel header={header('Sandwiches', 'All Sandwiches served with Fries or Salad')} key='5' className='p-2'>
         <Sandwiches />
       </Panel>
+
       <div className='h-[1px] bg-[#993399] mx-2'></div>
+
       <Panel header={header('Burgers', '6 oz Fresh Beef on a toasted sesame bun, served with fries or house salad')} key='6' className='p-2'>
         <Burgers />
       </Panel>
+
       <div className='h-[1px] bg-[#993399] mx-2'></div>
-      <Panel header={header('Toryork Specials', '')} key='7' className='p-2'>
-        <Specials />
+
+      <Panel header={header('Rice Bowls', 'Fresh green salad, basmati rice, choice of meat covered in our homemade yogurt dressing, dressing. hot sauce and jalapeno')} key='7' className='p-2'>
+        <RiceBowls />
       </Panel>
+
       <div className='h-[1px] bg-[#993399] mx-2'></div>
+
       <Panel header={header('Salads', '')} key='8' className='p-2'>
         <Salads />
       </Panel>
+
       <div className='h-[1px] bg-[#993399] mx-2'></div>
-      <Panel header={header('Rice Bowls', 'Fresh green salad, basmati rice, choice of meat covered in our homemade yogurt dressing, dressing. hot sauce and jalapeno')} key='9' className='p-2'>
-        <RiceBowls />
+
+      <Panel header={header('Toryork Specials', '')} key='9' className='p-2'>
+        <Specials />
       </Panel>
+
     </Collapse>
   );
 };
