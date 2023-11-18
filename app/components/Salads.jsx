@@ -25,7 +25,7 @@ const Salads = () => {
     },
     {
       name: 'Twisted Cob Salad',
-      description: 'Romain, Mixed greens, Carrots, Cucumber, Tomato, Onions, Avacado, Bacon, Mixed cheese, Fried Egg, Grilled Chicken & White Wine Vinaigrette',
+      description: 'Romain, Mixed greens, Carrots, Cucumber, Tomato, Onions, Avocado, Bacon, Mixed cheese, Fried Egg, Grilled Chicken & White Wine Vinaigrette',
       med: '',
       specialprice: '',
       large: '$13.49'
@@ -46,7 +46,7 @@ const Salads = () => {
       specialprice: '',
     },
     {
-      name: 'Avacado',
+      name: 'Avocado',
       description: '',
       price: '$1.99',
       specialprice: '',
@@ -82,7 +82,7 @@ const Salads = () => {
                 {normalItems.map((item, index) => (
                   <tr key={index} className='border-b border-white'>
                     <td>
-                      <h1 className='text-[#8e3a60] font-bold text-md w-[70%]'>
+                      <h1 className='text-[#993399] font-bold text-md w-[70%]'>
                         {item.name}
                       </h1>
                       <span className='italic font-bold text-xs'>
@@ -92,7 +92,7 @@ const Salads = () => {
                         )}
                       </span>
                     </td>
-                    <td className='px-1 font-bold text-[#8e3a60] text-md w-[10%] text-center'>
+                    <td className='px-1 font-bold text-[#993399] text-md w-[10%] text-center'>
                       {item.specialprice != '' && (
                         <h1 className='line-through text-black text-sm'>
                           {item.med}
@@ -100,7 +100,7 @@ const Salads = () => {
                       )}
                       <span>{item.med}</span>
                     </td>
-                    <td className='px-1 font-bold text-[#8e3a60] text-md w-[10%] text-center'>
+                    <td className='px-1 font-bold text-[#993399] text-md w-[10%] text-center'>
                       {item.specialprice != '' && (
                         <h1 className='line-through text-black text-sm'>
                           {item.large}
@@ -116,17 +116,17 @@ const Salads = () => {
                 {additionalItems.map((item, index) => (
                   <tr key={index} className='border-b border-white'>
                     <td>
-                      <h1 className='text-[#8e3a60] font-bold text-md '>
+                      <h1 className='text-[#993399] font-bold text-md '>
                         {item.name}
                       </h1>
                       <span className='italic font-bold text-xs'>
                         {item.description}
                       </span>
                     </td>
-                    <td className='px-1 py-1 font-bold text-[#8e3a60] text-md w-[10%]'>
+                    <td className='px-1 py-1 font-bold text-[#993399] text-md w-[10%]'>
                       <span></span>
                     </td>
-                    <td className='px-1 py-1 font-bold text-[#8e3a60] text-md w-[10%]'>
+                    <td className='px-1 py-1 font-bold text-[#993399] text-md w-[10%]'>
                       <span>{item.price}</span>
                     </td>
                   </tr>

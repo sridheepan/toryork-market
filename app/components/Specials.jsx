@@ -72,7 +72,7 @@ const Specials = () => {
                 {normalItems.map((item, index) => (
                   <tr key={index} className='border-b border-white'>
                     <td>
-                      <h1 className='text-[#8e3a60] font-bold text-md w-[70%]'>
+                      <h1 className='text-[#993399] font-bold text-md w-[70%]'>
                         {item.name}
                       </h1>
                       <span className='italic font-bold text-xs'>
@@ -81,7 +81,7 @@ const Specials = () => {
                         {item.sizes &&
                           item.sizes.map((size, idx) => {
                             return (
-                              <p key={idx} className='py-2 text-[#8e3a60]'>
+                              <p key={idx} className='py-2 text-[#993399]'>
                                 {size}
                               </p>
                             );
@@ -92,7 +92,7 @@ const Specials = () => {
                         )}
                       </span>
                     </td>
-                    <td className='px-1 font-bold text-[#8e3a60] text-md w-[10%] text-center'>
+                    <td className='px-1 font-bold text-[#993399] text-md w-[10%] text-center'>
                       {item.specialprice != '' && (
                         <h1 className='line-through text-black text-sm'>
                           {item.med}
@@ -100,7 +100,7 @@ const Specials = () => {
                       )}
                       <span>{item.med}</span>
                     </td>
-                    <td className='px-1 font-bold text-[#8e3a60] text-md w-[10%] text-center'>
+                    <td className='px-1 font-bold text-[#993399] text-md w-[10%] text-center'>
                       {item.specialprice != '' && (
                         <h1 className='line-through text-black text-sm'>
                           {item.large}

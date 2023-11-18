@@ -75,17 +75,17 @@ const Eggs = () => {
                 {normalItems.map((item, index) => (
                   <tr key={index} className='border-b border-white'>
                     <td>
-                      <h1 className='text-[#8e3a60] font-bold text-md '>
+                      <h1 className='text-[#993399] font-bold text-md '>
                         {item.name}
                       </h1>
                       <span className='italic font-bold text-xs'>
                         {item.description}
                         {item.add && (
-                          <p className='py-2 text-[#8e3a60]'>Add {item.add}</p>
+                          <p className='py-2 text-[#993399]'>Add {item.add}</p>
                         )}
                       </span>
                     </td>
-                    <td className='px-1 font-bold text-[#8e3a60] text-md w-[10%]'>
+                    <td className='px-1 font-bold text-[#993399] text-md w-[10%]'>
                       {item.specialprice != '' && (
                         <h1 className='line-through text-black text-sm'>
                           {item.price}

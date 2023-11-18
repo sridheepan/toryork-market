@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Header = () => {
   return (
-    <div className='h-[30vh] flex flex-col items-center justify-center text-[50px] bg-[#8e3a60] text-white p-2'>
+    <div className='h-[30vh] flex flex-col items-center justify-center text-[50px] bg-[#993399] text-white p-2'>
       <Image
         src='/border.png'
         width={500}
