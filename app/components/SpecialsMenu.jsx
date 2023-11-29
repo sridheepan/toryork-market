@@ -23,7 +23,7 @@ const SpecialMenu = () => {
   };
 
   return (
-    <div className='flex flex-col justify-center items-center'>
+    <div className='flex flex-col'>
       <div className='overflow-x-auto'>
         <div className='inline-block min-w-full py-2 rounded-lg'>
           <div className='overflow-hidden'>
@@ -37,7 +37,7 @@ const SpecialMenu = () => {
                       <span className='italic font-bold text-xs'>{item.description}</span>
                     </td>
                     <td className='px-1 font-bold text-[#993399] text-sm w-[10%] pt-[18px]'>
-                      {/* <h1 className='line-through text-black text-sm'>{item.price}</h1> */}
+                      <h1 className='line-through text-white text-sm'>{item.price}</h1>
                       <span className='relative'>{item.price}</span>
                     </td>
                   </tr>
