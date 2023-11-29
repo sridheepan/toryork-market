@@ -36,9 +36,9 @@ const SpecialMenu = () => {
                       <h1 className='text-[#993399] font-bold text-md w-[90%]'>{item.name}</h1>
                       <span className='italic font-bold text-xs'>{item.description}</span>
                     </td>
-                    <td className='px-1 font-bold text-[#993399] text-sm w-[10%]'>
+                    <td className='px-1 font-bold text-[#993399] text-sm w-[10%] pt-[18px]'>
                       {/* <h1 className='line-through text-black text-sm'>{item.price}</h1> */}
-                      <span>{item.price}</span>
+                      <span className='relative'>{item.price}</span>
                     </td>
                   </tr>
                 ))}
